@@ -1,0 +1,7 @@
+channels:
+  - plotly
+  - defaults
+
+proxy_servers:
+  http: http://10.192.0.2:8888
+  https: http://10.192.0.2:8888
