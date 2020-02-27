@@ -13,6 +13,14 @@ git checkout dopsa-2.5
 
 To learn more about what each of these files does and how to start from scratch, see the [Dash App Deployment Docs](https://plot.ly/dash/deployment/on-premise).
 
+##### Required files
+
+In order to trigger a Conda-based python deployment in Dash Enterprise, the following files should be available:
+
+- `conda-requirements.txt`: A listing of packages to be installed via conda
+- `conda-runtime.txt`: A valid miniconda runtime package name.
+  - A list of valid runtimes can be fetched from the [miniconda repo](https://repo.continuum.io/miniconda/) and comes in the form of `Miniconda$VERSION`, where $VERSION is a valid Miniconda version. By way of example, both `Miniconda3-4.5.12` and `Miniconda-4.5.12` are valid contents for the `conda-runtime.txt` file.
+
 #### Authentication Instructions
 Check out the following documentation for information on [privacy](https://dash.plot.ly/dash-deployment-server/privacy) and [authentication](https://dash.plot.ly/dash-deployment-server/app-authentication) settings
 available for Dash applications deployed on your Dash Deployment server. Note: the `dash-auth` package is
