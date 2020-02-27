@@ -25,7 +25,11 @@ In order to trigger a Conda-based python deployment in Dash Enterprise, the foll
 
 The following files will be optionally used during the deployment process:
 
-- `.condarc`: This file will be copied into place and used by Conda as a [`.condarc` file](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html).
+- `.condarc`: This file will be copied into place and used by Conda as a [`.condarc` file](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html). For example, alternative conda channels can be specified by setting the following as the file's contents:
+    ```yaml
+    channels:
+      - https://anaconda-repo.example.com/conda/
+    ```
 - `requirements.txt`: This file will be used to install dependencies via `pip` _after_ conda-based dependencies have been installed.
 - `bin/pre_compile`: An executable script that will be run before Conda is installed and executed
 - `bin/post_compile`: An executable script that will be run after Conda is installed and executed
