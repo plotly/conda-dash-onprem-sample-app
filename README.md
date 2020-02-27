@@ -21,6 +21,15 @@ In order to trigger a Conda-based python deployment in Dash Enterprise, the foll
 - `conda-runtime.txt`: A valid miniconda runtime package name.
   - A list of valid runtimes can be fetched from the [miniconda repo](https://repo.continuum.io/miniconda/) and comes in the form of `Miniconda$VERSION`, where $VERSION is a valid Miniconda version. By way of example, both `Miniconda3-4.5.12` and `Miniconda-4.5.12` are valid contents for the `conda-runtime.txt` file.
 
+##### Optional files
+
+The following files will be optionally used during the deployment process:
+
+- `.condarc`: This file will be copied into place and used by Conda as a [`.condarc` file](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html).
+- `requirements.txt`: This file will be used to install dependencies via `pip` _after_ conda-based dependencies have been installed.
+- `bin/pre_compile`: An executable script that will be run before Conda is installed and executed
+- `bin/post_compile`: An executable script that will be run after Conda is installed and executed
+
 #### Authentication Instructions
 Check out the following documentation for information on [privacy](https://dash.plot.ly/dash-deployment-server/privacy) and [authentication](https://dash.plot.ly/dash-deployment-server/app-authentication) settings
 available for Dash applications deployed on your Dash Deployment server. Note: the `dash-auth` package is
