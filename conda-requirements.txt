@@ -4,5 +4,5 @@ scikit-image==0.16.2
 pandas==0.25.3
 numpy==1.18.1
 dash==1.9.1
-dash-core-components==1.8.1
+dash-core-components==2.0.0
 dash-html-components==1.0.2
