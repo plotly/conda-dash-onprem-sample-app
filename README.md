@@ -1,5 +1,12 @@
 ## Dash On-Premise Sample App Versions 3.0.0+
 
+<div align="center">
+  <a href="https://dash.plotly.com/project-maintenance">
+    <img src="https://dash.plotly.com/assets/images/maintained-by-plotly.png" width="400px" alt="Maintained by Plotly">
+  </a>
+</div>
+
+
 This repository contains a simple Dash app that can be deployed as-is on your [Dash Deployment Server](https://plot.ly/dash/pricing/) server. This application is configured to deploy on Dash Deployment Server versions 3.0.0
 and above. If you are deploying apps on an older DDS server you can clone this repository and then checkout the `dopsa-2.5` branch with:
 
